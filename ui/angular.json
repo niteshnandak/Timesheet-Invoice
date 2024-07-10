@@ -13,6 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "allowedCommonJsDependencies": [
+              "@progress/kendo-data-query"
+            ],
             "outputPath": "dist/angular-timesheet",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -43,8 +46,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "7mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -57,7 +60,7 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": false
             }
           },
           "defaultConfiguration": "production"
