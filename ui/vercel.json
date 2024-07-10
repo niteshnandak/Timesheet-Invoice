@@ -1,15 +1,8 @@
 {
-    "version": 2,
-    "builds": [
+    "rewrites": [
       {
-        "src": "ui/package.json",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/Timesheet-Invoice",
-        "dest": "/"
+        "source": "/(.*)",
+        "destination": "/"
       }
     ]
   }
