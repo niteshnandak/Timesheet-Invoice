@@ -1,22 +1,23 @@
 .navbar {
-  min-height: 70px; 
+  background-color: #0d0a0b;
+  background: linear-gradient(0deg, #011502 31%, #012328 97%);
 }
-  
-.nav-link {
-  transition: color 0.3s;
+.nav-link{
+  color: #F7FFF7;
+  font-weight: 200;
+  font-size: small;
+  transition: font-size 0.2s;
 }
-  
-.nav-link:hover {
-   color: #06bef8 ; /* Change to the desired hover color */
+.nav-link:hover{
+  color: rgb(255, 222, 115);
+  font-size: medium;
+  cursor: pointer;
 }
-  
-.navbar-brand img {
-    margin-left : 10px;
+.logo{
+  font-weight: bolder;
+  font-size: 0.85rem;
 }
 
-a.nav-link {
-    color : white;
-    font-weight : bold;
-    cursor: pointer;
+.navbar-brand{
+  padding-left:15px;
 }
-  
